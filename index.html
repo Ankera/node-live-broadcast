@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NODE-直播</title>
+    <title>NODE-broadcast</title>
 </head>
 
 <body>
@@ -17,7 +17,8 @@
             var videoElement = document.getElementById('videoElement');
             var flvPlayer = flvjs.createPlayer({
                 type: 'flv',
-                url: 'http://localhost:8000/live/laoyu.flv'
+                // url: 'http://127.0.0.1:8000/live/laoyu.flv'
+                url: 'http://127.0.0.1:8000/live/laoyu.flv?sign=1558785115-39e6c65aa7ea7741a8251bf8189e75e0'
             });
             flvPlayer.attachMediaElement(videoElement);
             flvPlayer.load();
